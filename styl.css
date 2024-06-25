@@ -1,0 +1,76 @@
+body{
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    text-align: center;
+    color: rgb(0, 0, 6);
+    text-decoration: underline;
+}
+.container{
+display: grid;
+grid-template-columns: 2fr 1fr 1fr 3fr;
+grid-auto-rows: minmax(100px, auto);
+gap: 50px;
+background-color: orange;
+height: 75pt;
+text-align: left;
+align-items: center;
+}
+.evidence{
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+.projekt{
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+.pojisteni{
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+.tabulka{
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    gap: 10px;
+}
+@media screen and (min-width:700px) {
+    .tabulka{
+        width:50%;
+    }
+}
+.scrollable_table{
+    overflow-x: auto;
+}
+a:link{
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover{
+    text-decoration: underline;
+    color: darkblue;
+    cursor: pointer;
+}
+a:visited {
+    text-decoration: none;
+    color: aliceblue;
+}
+footer{
+    text-align: center;
+    background-color: orange;
+    color: aliceblue;
+}
+.tlacitko{
+    display: inline-block;
+    border-radius: 10%;
+    padding: 8px 20px;
+    background-color: darkblue;
+    color: aliceblue;
+    font-weight: bold;
+}
